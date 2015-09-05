@@ -1,0 +1,13 @@
+:root {
+	--button-color: #00000000;
+	--hover-color: blue;
+}
+
+
+button {
+	border: 1px solid var(--button-color);
+}
+
+button:hover {
+	border:1px solid var(--hover-color);
+}
