@@ -25,11 +25,11 @@ gulp.task('postcss', function() {
     gulp.src(path.join(CSSNEXT_DIR, 'sfstyle.css'), { base: CSSNEXT_DIR })
         .pipe(postcss([
             atImport(),
-//            require('postcss-mixins')(),
-//            require('postcss-nested')(),
-//            require('postcss-simple-vars')(),
+            require('postcss-mixins')(),
+            require('postcss-nested')(),
+            require('postcss-simple-vars')(),
             require('cssnext')(),
-            require('cssnano')(),
+//            require('cssnano')(),
             autoprefixer({ browsers: ['last 2 versions'] })
         ]))
         .pipe(gulp.dest(CSS_RELEASE_DIR))
