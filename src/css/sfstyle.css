@@ -1,6 +1,55 @@
 @import "./include/normalize.css";
 /*@import "./config.css";*/
 @import "./include/button.css";
+:root {
+	--base-font-size:10px;
+}
+
+/* 共通設定 */
+html {
+	font-size:var(--base-font-size);
+	width:80%;
+	height:100vh;
+	margin-left:auto;
+	margin-right:auto;
+	background: black;
+}
+
+body {
+	background: white;
+	width:80%;
+	min-height:100%;
+	margin:auto;
+}
+
+.nav {
+	width:100%;
+	display: flex;
+}
+
+.nav menu {
+	padding: 0;
+	padding-top: 10px;
+	text-align: center;
+	height:calc(var(--base-font-size) * 2.5);
+	border:1px solid black;
+	flex:1.0;
+}
+
+.nav menu:hover {
+		
+}
+
+@media screen and (min-width:769px)
+{
+	
+}
+
+@media screen and (max-width:768px)
+{
+	
+}
+
 
 
 

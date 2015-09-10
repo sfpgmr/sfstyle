@@ -429,6 +429,8 @@ th {
 	display: inline-block;
 	text-align: center;
 	text-decoration: none;
+	border-radius: 4px;
+	border:2px solid rgba(0, 0, 0, 0);
 	line-height: 54px;
 	outline: none;
 }
@@ -455,9 +457,60 @@ th {
 
 .button:hover {
 	background: white;
-	border: 1px solid blue;
+	border: 2px solid blue;
 	color: blue;
 }
+
+/* 共通設定 */
+html {
+	font-size: 10px;
+	width:80%;
+	height:100vh;
+	margin-left:auto;
+	margin-right:auto;
+	background: black;
+}
+
+body {
+	background: white;
+	width:80%;
+	min-height:100%;
+	margin:auto;
+}
+
+.nav {
+	width:100%;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+}
+
+.nav menu {
+	padding: 0;
+	padding-top: 10px;
+	text-align: center;
+	height: 25px;
+	border:1px solid black;
+	-webkit-flex:1.0;
+	-ms-flex:1.0;
+	    flex:1.0;
+}
+
+.nav menu:hover {
+		
+}
+
+@media screen and (min-width:769px)
+{
+	
+}
+
+@media screen and (max-width:768px)
+{
+	
+}
+
 
 
 
