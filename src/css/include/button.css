@@ -1,6 +1,7 @@
 @import "./config.css";
 
 .button {
+  border-radius: 3px;
 	border:none;
 	display: inline-block;
 	text-align: center;

@@ -1,0 +1,49 @@
+@import "./config.css";
+
+@media (--smart-phone) {
+  .main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    .nav-items {
+      display: none; 
+    }
+    .nav-button {
+      display: inline-block;
+    }
+  }
+
+}
+
+@media (--tablet) {
+  .nav-button {
+    display: none;
+  }
+}
+
+@media (--desktop) {
+  .main-nav {
+    background:gray;
+  }
+  .nav-button {
+    display:none;
+  }
+  .nav-items {
+    display:flex;
+    flex-direction: row;
+    .item {
+      width:200px;
+      text-align:left;
+      padding:10px;
+      color:white;
+      &:hover {
+        color: black;
+        background: white;
+        cursor: pointer;
+      }
+    }
+  }
+  
+  
+}
