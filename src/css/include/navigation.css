@@ -1,27 +1,49 @@
 @import "./config.css";
 
+/* common */
+@media screen {
+  .main-nav {
+    background:gray;
+    .nav-items {
+      .item {
+          text-decoration:none;
+          text-align:left;
+          padding:10px;
+          color:white;
+          &:hover {
+            color: black;
+            background: white;
+            cursor: pointer;
+          }
+      }
+    }
+  }
+}
+
+/* for smart phone */
 @media (--smart-phone) {
   .main-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    flex-direction: column;
-    .nav-items {
-      display: none; 
-    }
     .nav-button {
+      svg {
+        vertical-align: middle;
+      }
+      border:none;
+      background:none;
       display: inline-block;
     }
+   .nav-items {
+      display:none;
+      flex-direction: column;
+    }
+    position:fixed;
+    width:100%;
+    top: 0;
+    left: 0;
   }
 
 }
 
-@media (--tablet) {
-  .nav-button {
-    display: none;
-  }
-}
-
+/* for deskctop */
 @media (--desktop) {
   .main-nav {
     background:gray;
@@ -33,17 +55,7 @@
     display:flex;
     flex-direction: row;
     .item {
-      width:200px;
-      text-align:left;
-      padding:10px;
-      color:white;
-      &:hover {
-        color: black;
-        background: white;
-        cursor: pointer;
-      }
+      flex-basis: 200px;
     }
   }
-  
-  
 }
