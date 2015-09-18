@@ -24,6 +24,8 @@
 @media (--smart-phone) {
   .main-nav {
     .nav-button {
+      width: 48px;
+      height: 48px;
       svg {
         vertical-align: middle;
       }

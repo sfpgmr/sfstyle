@@ -500,6 +500,8 @@ th {
     left: 0;
   }
   .main-nav .nav-button {
+    width: 48px;
+    height: 48px;
     border:none;
     background:none;
     display: inline-block;
