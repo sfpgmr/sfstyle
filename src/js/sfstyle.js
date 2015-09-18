@@ -1,6 +1,7 @@
 (() => {
   d3.selectAll('.nav-button')
   .on('click',function(d,i){
+    alert("click");
       var target = d3.select('.main-nav[data-sf-name="' + d3.select(this).attr('data-sf-target') + '"] .nav-items');
       if(target){
         if(target.style('display') === 'none'){
