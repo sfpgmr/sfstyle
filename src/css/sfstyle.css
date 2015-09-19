@@ -7,7 +7,7 @@
 @media screen {
 * {
   font-family: var(--default-font);
-  font-size:12px;
+  font-size:14px;
   box-sizing: border-box;
   /*border: 1px dashed gray;*/
 }
@@ -30,6 +30,9 @@ body {
 }
 
 @media (--desktop) {
+  body {
+    padding:40px;
+  }
   .title {
     font-size:40px;
   }

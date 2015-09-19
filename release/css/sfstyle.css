@@ -563,7 +563,7 @@ th {
 @media screen {
 * {
   font-family: "Meiryo","AppleGothic",sans-serif;
-  font-size:12px;
+  font-size:14px;
   box-sizing: border-box;
   /*border: 1px dashed gray;*/
 }
@@ -586,6 +586,9 @@ body {
 }
 
 @media screen and (min-width:961px) {
+  body {
+    padding:40px;
+  }
   .title {
     font-size:40px;
   }
