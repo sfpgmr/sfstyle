@@ -34,20 +34,19 @@
       background:none;
       display: inline-block;
     }
-   .nav-items {
-      flex-direction: column;
-    }
     position:fixed;
     width:100%;
     top: 0;
     left: 0;
   }
+
   .nav-display-default {
     display:none;
   }
 
   .nav-display-toggle {
     display:flex;
+    flex-direction: column;
   }      
 
 }
@@ -61,16 +60,17 @@
     display:none;
   }
   .nav-items {
-    flex-direction: row;
     .item {
       flex-basis: 200px;
     }
   }
   .nav-display-default {
     display:flex;
+    flex-direction: row;
   }
   .nav-display-toggle {
     display:flex;
+    flex-direction: row;
   }       
 
 }

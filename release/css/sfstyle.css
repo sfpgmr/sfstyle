@@ -509,11 +509,7 @@ th {
   .main-nav .nav-button svg {
     vertical-align: middle;
   }
-  .main-nav .nav-items {
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
+
   .nav-display-default {
     display:none;
   }
@@ -523,6 +519,9 @@ th {
     display:-ms-flexbox;
     display:-webkit-box;
     display:flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }      
 
 }
@@ -535,11 +534,6 @@ th {
   .nav-button {
     display:none;
   }
-  .nav-items {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
   .nav-items .item {
     -ms-flex-preferred-size: 200px;
         -webkit-flex-basis: 200px;
@@ -550,19 +544,25 @@ th {
     display:-ms-flexbox;
     display:-webkit-box;
     display:flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
   .nav-display-toggle {
     display:-webkit-flex;
     display:-ms-flexbox;
     display:-webkit-box;
     display:flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }       
 
 }
 
 @media screen {
 * {
-  font-family: "Meiryo";
+  font-family: "Meiryo","AppleGothic",sans-serif;
   font-size:12px;
   box-sizing: border-box;
   /*border: 1px dashed gray;*/
