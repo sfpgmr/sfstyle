@@ -2,8 +2,8 @@
   d3.selectAll('.nav-button')
   .on('click',function(d,i){
       var target = d3.select('.main-nav[data-sf-name="' + d3.select(this).attr('data-sf-target') + '"] .nav-items');
-      alert(target);
       if(target){
+        alert(target.style('display'));
         if(target.style('display') === 'none'){
           target.style({'display':'flex'});
         } else {
