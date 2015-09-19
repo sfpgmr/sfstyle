@@ -3,12 +3,12 @@
   .on('click',function(d,i){
       var target = d3.select('.main-nav[data-sf-name="' + d3.select(this).attr('data-sf-target') + '"] .nav-items');
       if(target){
-        alert(target.style('display'));
         if(target.style('display') === 'none'){
           target.style({'display':'flex'});
         } else {
           target.style({'display':'none'});
         }
+        alert(target.style('display'));
       }
    }).each(function(){
     var self = this;
