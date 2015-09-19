@@ -1,22 +1,18 @@
 (() => {
   d3.selectAll('.nav-button')
   .on('click',function(d,i){
-      var target = d3.select('.main-nav[data-sf-name="' + d3.select(this).attr('data-sf-target') + '"] .nav-items');
+      if(!this.sf_target){
+        this.sf_target = d3.select('.main-nav[data-sf-name="' + d3.select(this).attr('data-sf-target') + '"] .nav-items');
+      }
+      var target = this.sf_target; 
       if(target){
-        if(target.style('display') == 'none'){
-          target.style({'display':'flex'});
+        if(target.classed('nav-display-default')){
+          target.classed('nav-display-default',false);
+          target.classed('nav-display-toggle',true);
         } else {
-          target.style({'display':'none'});
+          target.classed('nav-display-default',true);
+          target.classed('nav-display-toggle',false);
         }
-        alert(target.style('display'));
       }
-   }).each(function(){
-    var self = this;
-    d3.select(window).on('resize',function(){
-      var target = d3.select('.main-nav[data-sf-name="' + d3.select(self).attr('data-sf-target') + '"] .nav-items');
-      if(target.style('flex-direction') === 'row'){
-          target.style({'display':'flex'});
-      }
-    });
-  });
+   });
 })();
