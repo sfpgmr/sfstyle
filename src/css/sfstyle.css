@@ -34,7 +34,7 @@ body {
 
 @media (--desktop) {
   body {
-    padding:40px;
+    padding:60px;
   }
   .title {
     font-size:40px;
